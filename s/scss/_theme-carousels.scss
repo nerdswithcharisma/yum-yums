@@ -1,0 +1,36 @@
+.owl-theme{
+    .owl-nav{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        line-height: 300px;
+        
+        & [class*='owl-']{
+            position: absolute;
+            color: $standardText;
+            font-size: 45px;
+            margin: 0;
+            padding: 0;
+            background: none;    
+            
+            &:hover{
+                background: none;
+                color: $dark;
+            }
+        }
+        
+        .owl-prev{
+            left: -20px;
+        }
+
+        .owl-next{
+            right: -20px;
+        }
+    } 
+} 
+
+@media #{ $tabletV-smaller }{
+    .owl-dots{
+        display: none !important; 
+    }
+}

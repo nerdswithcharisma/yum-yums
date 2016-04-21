@@ -1,0 +1,15 @@
+//backgrounds
+@each $name in $color_names {
+    $i: index($color_names, $name);
+    .bg--#{$name}{
+      @include swatch( nth($color_vars, $i) );
+    }
+}
+
+//fonts
+@each $name in $color_names {
+    $i: index($color_names, $name);
+    .font--#{$name}{
+      @include fontSwatch( nth($color_vars, $i) );
+    }
+}

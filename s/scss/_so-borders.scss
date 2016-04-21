@@ -1,0 +1,45 @@
+.bordered--none{ border: none !important; }
+.bordered-top--none{ border-top: none !important; }
+.bordered-bottom--none{ border-bottom: none !important; }
+.bordered-left--none{ border-left: none !important; }
+.bordered-right--none{ border-right: none !important; }
+
+.bordered--bottom{
+	border: none;
+	border-bottom: 1px solid $borderDefault;
+}
+
+.bordered--top{
+	border: none;
+	border-top: 1px solid $borderDefault;
+}
+
+.bordered--xs{ 
+    border-width: 1px;
+    border-style: solid;
+    border-color: $borderDefault;
+}
+
+.bordered--sm{ 
+    border-width: 2px;
+}
+
+.bordered--md{ 
+    border-width: 4px;
+}
+
+.bordered--lg{ 
+    border-width: 6px;
+}
+
+.bordered--xl{ 
+    border-width: 10px;
+}
+
+//border colors
+@each $name in $color_names {
+    $i: index($color_names, $name);
+    .bordered--#{$name}{
+      @include border-color( nth($color_vars, $i) );
+    }
+}

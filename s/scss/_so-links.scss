@@ -1,0 +1,13 @@
+a, a:active, a:focus, a.hover{
+    text-decoration: none;
+    outline: 0;
+}
+
+a, .cursor--pointer{
+    color: $primary;
+    
+    &:hover{
+        text-decoration: none;  
+        color: $primary1
+    }
+}

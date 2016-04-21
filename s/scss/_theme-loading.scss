@@ -1,0 +1,29 @@
+#header{
+    position: relative;
+    z-index: 9998;
+}
+
+#loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/s/u/static/images/c/animated/ring-alt.svg) no-repeat center center rgba(255,255,255,0.9);
+    z-index: 9997;
+    background-size: 100px 100px;
+}
+
+.lt-ie9 #loading{
+    background: url(/s/u/static/images/c/opacities/w-50.png) repeat;
+}
+
+.lt-ie8 #loading{
+    background: transparent !important;
+}
+
+@media #{ $tabletV-smaller }{
+    #loading{
+        top: 105px;
+    }
+}

@@ -1,0 +1,269 @@
+//hide GA iframe
+iframe[name='google_conversion_frame'] { 
+    height: 0 !important;
+    width: 0 !important; 
+    line-height: 0 !important; 
+    font-size: 0 !important;
+    margin-top: -13px;
+    float: left;
+}
+
+//angular flash helper
+[ng\:cloak], [ng-cloak], .ng-cloak{
+  display: none !important;
+}
+
+//ie hider
+.lt-ie9{
+    .hide-lt-ie9{
+        display: none !important;
+    }
+}
+
+//hide scrollbars, we dont need them
+/*
+::-webkit-scrollbar { 
+    display: none;
+}
+*/
+
+//box model
+.margin--none{ margin: 0 !important; }
+.margin--auto{ margin: auto; display: block; }
+.padding--none{ padding: 0; }
+
+//alignment
+@media #{ $iphone }{
+    .mobile-text-left{ text-align: left !important; }
+    .mobile-text-right{ text-align: right !important; }
+    .mobile-text-center{ text-align: center !important; }
+}
+
+//images
+img.pull-right{ margin-left: 15px; margin-bottom: 15px; }
+img.pull-left{ margin-right: 15px; margin-bottom: 15px; }
+
+//transitions
+a{ 
+    @include transitionAll();
+}
+
+//z index
+.z1{ z-index: 1; }
+.z2{ z-index: 2; }
+.z10{ z-index: 10; }
+.z100{ z-index: 100; }
+.z1000{ z-index: 1000; }
+.z7500{ z-index: 7500; }
+.z9998{ z-index: 9998; }
+.z9999{ z-index: 9999; }
+
+.padding-vert-xxs{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.padding-vert-xs{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.padding-vert-sm{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.padding-vert-md{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.padding-vert-lg{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.padding-vert-xl{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.padding-horiz-xxs{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.padding-horiz-xs{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.padding-horiz-sm{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.padding-horiz-md{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.padding-horiz-lg{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.padding-horiz-xl{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.padding-xxs{
+    padding: 2px;
+}
+
+.padding-xs{
+    padding: 5px;
+}
+
+.padding-sm{
+    padding: 10px;
+}
+
+.padding-md{
+    padding: 15px;
+}
+
+.padding-lg{
+    padding: 20px;
+}
+
+.padding-xl{
+    padding: 25px;
+}
+
+//clearing helpers
+.clear{ clear: both; }
+.clear-right{ clear: right; }
+.clear-left{ clear: left; }
+
+//trancators
+.truncate{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    display: block;
+    width: 100%;
+}
+
+//offscreen movers
+.offscreen{
+    text-indent: -9999px;
+}
+
+//cursors
+.cursor--help{
+    cursor: help;
+}
+
+.cursor--pointer{
+    cursor: pointer;
+}
+
+//wrapping
+.no--wrap{
+    white-space: nowrap;
+}
+
+//positioning
+.position--relative{
+	position: relative;
+}
+
+.position--absolute{
+    position: absolute;
+}
+
+.position--fixed{
+    position: fixed;
+}
+
+//radii
+.border-radius--none{
+    @include border-radius(0px !important);
+}
+
+.border-radius--xs{
+    @include border-radius(2px !important);
+}
+
+.border-radius--sm{
+    @include border-radius(5px !important);
+}
+
+.border-radius--md{
+    @include border-radius(8px !important);
+}
+
+.border-radius--lg{
+    @include border-radius(20px !important);
+}
+
+.border-radius--xl{
+    @include border-radius(300px !important);
+}
+
+//five columns
+.container{
+    width: 99%;
+}
+
+.lt-ie9 .container{
+    width: 99% !important;
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+//positioning on mobile
+@media #{$iphone}{
+    .text-center-xs{ text-align: center; }
+    
+    .block--xs{ display: block; }
+}
+
+@media #{$tablet-vert}{
+    .text-center-sm{ text-align: center; }
+    
+    .block--sm{ display: block; }
+}

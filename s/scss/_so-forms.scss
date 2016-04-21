@@ -1,0 +1,27 @@
+.input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn{
+    height: 36px;
+    padding: 0 16px;
+}
+
+#facets, #filters{
+    .fa-chevron-down, .fa-chevron-up, .fa-plus{
+        margin-top: 15px;    
+    }
+    
+    label{
+        font-weight: normal;
+        position: relative;
+        padding-left: 30px;
+        display: block;
+        
+        i.facetReplace{
+            left: 0;
+            top: 0;
+            position: absolute;
+            
+            &:hover{
+                color: $primary;    
+            }
+        }
+    }
+}

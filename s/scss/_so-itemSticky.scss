@@ -1,0 +1,34 @@
+.itemWrap{
+    &:hover .itemSticky i{
+        opacity: 1;    
+    }
+    
+    .itemSticky{
+        position: absolute;
+        padding: 5px 0;
+        top: 45%;
+        right: 1px;
+        z-index: 99;
+        color: $borderDefault;
+        width: 99%;
+        text-align: center;
+        font-size: 12px;
+
+        i{
+            cursor: pointer;
+            opacity: 0;
+            width: 25px;
+            height: 25px;
+            line-height: 22px;
+            border: 2px solid $borderDefault;
+            border-radius: 60px;
+            margin: 0 5px;
+            @include transitionAll();
+
+            &:hover{
+                color: $primary3;
+                border-color: $primary3;
+            }
+        }
+    }
+}

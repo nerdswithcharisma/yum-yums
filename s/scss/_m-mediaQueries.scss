@@ -1,0 +1,23 @@
+//media Queries
+/* Usage
+    @media # { $ tabletV-smaller }{
+        ...
+    }
+*/
+
+//mobile only
+$iphone: 'only screen and (max-width: 767px)';
+
+//tablet & mobile
+$tabletV-smaller: 'only screen and (max-width: 991px)';
+$tabletH-smaller: 'only screen and (max-width: 1024px)';
+
+//tablet only
+$tablet-vert: 'only screen and (min-width: 569px) and (max-width: 991px)';
+$tablet-horiz: 'only screen and (min-width: 992px) and (max-width: 1024px)';
+$tableH-larger: 'only screen and (min-width: 992px)';
+$tabletV-larger: 'only screen and (min-width: 991px)';
+
+//desktop and bigger
+$desktop: 'only screen and (min-width: 1025px) and (max-width: 1600px)';
+$xl: 'only screen and (min-width: 1901px)';

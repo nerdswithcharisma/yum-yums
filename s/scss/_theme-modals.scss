@@ -1,0 +1,12 @@
+.modal-dialog{
+    z-index: 9998;
+}
+
+.modal-backdrop{
+    background-color: $primary3;
+    
+    .modal-content{
+        @include border-radius(0);
+        border: none;
+    }
+}

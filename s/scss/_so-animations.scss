@@ -1,0 +1,4 @@
+.animate--all{
+    @include transition-property(all);
+    @include transition-duration(0.05s);
+}

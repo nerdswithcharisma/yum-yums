@@ -1,0 +1,66 @@
+//border colors
+@mixin border-color($color) {
+    border-color: $color;
+}
+
+//mixin to change <h1 - h6> font-size and line height
+@mixin heading($fontSize) {
+  font-size: $fontSize;
+}
+
+//button styles
+@mixin link($color) {
+    color: #fff;
+    border-color: darken( $color, 18% );
+    background: $color;
+
+    &:hover { 
+      color: #fff;
+      border-color: darken( $color, 25% );
+      background: darken( $color, 10% );
+      @include box-shadow( inset 0 0 6px darken( $color, 40% ) );  
+    };
+}
+
+//rounded corders
+@mixin rounded($pixels) {
+    @include border-radius( $pixels );
+}
+
+//transition
+@mixin transitionAll(){
+    @include transition-property(all);
+    @include transition-duration(0.2s);
+    @include transition-timing-function(ease-in);
+}
+
+//mixin to change font, button sizes
+@mixin sizing($element, $size) {
+    @if $element == 'btn' {
+        font-size: $size;
+        padding: $size*0.75 $size*3;
+    }
+    
+    @if $element == 'font' {
+        font-size: $size !important;
+    }
+}
+
+//background colors
+@mixin swatch($background) {
+    background: $background;
+}
+
+//font colors
+@mixin fontSwatch($color) {
+    color: $color;
+}
+
+//cover background image
+@mixin cover( $image ){ 
+  background: url($image) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

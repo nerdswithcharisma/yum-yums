@@ -1,0 +1,42 @@
+.input-group-addon:hover{
+    color: #fff;
+    background: lighten( $cta, 20% );
+    border-color: darken( $cta, 15% );
+    cursor: pointer;
+}
+
+#cart{
+    &:hover{
+        border-color: $primary3;
+        background: $primary4;
+        
+        .notification, .notification:active{
+            color: $light;    
+        }
+    }
+}
+
+#searchInput{
+    &:focus{
+        border-color: $cta;    
+    }
+}
+
+#searchBtn{
+    cursor: pointer;
+    
+    &:hover{
+        background: darken( $cta, 15% );
+        border-color: darken( $cta, 45% );
+    }
+}
+
+#mainMenu{
+    li{
+        .child{
+            &:hover{
+                color: $cta;    
+            }
+        }
+    }
+}

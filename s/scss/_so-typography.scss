@@ -1,0 +1,99 @@
+body{
+    font: 16px/26px "Open Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+p {
+  margin: 0 0 2% 0; 
+  color: $standardText;
+}
+
+/**************************************
+/ Headings
+**************************************/
+h1, h2, h3, h4, h5, h6{
+  margin: 0.5% 0;
+  font-weight: 300;
+}
+
+h1 {
+    @include heading(2em);
+}
+
+h2 {
+    @include heading(1.625em);
+}
+
+h3 {
+    @include heading(1.375em);
+}
+
+h4 {
+    @include heading(1.125em);
+}
+
+h5 {
+    @include heading(1em);
+}
+
+h6 {
+    @include heading(0.875em);
+}
+
+@media #{$tabletH-smaller}{
+    h1 {
+        @include heading(1.875em);
+    }
+
+    h2 {
+        @include heading(1.313em);
+    }
+
+    h3 {
+        @include heading(1.25em);
+    }
+
+    h4 {
+        @include heading(1.125em);
+    }
+
+    h5 {
+        @include heading(1em);
+    }
+
+    h6 {
+        @include heading(0.875em);
+    }
+
+}
+
+@media #{$iphone}{
+    body{
+        font-size: 14px;    
+    }
+    
+    h1 {
+        @include heading(1.7em);
+    }
+
+    h2 {
+        @include heading(1.4em);
+    }
+
+    h3 {
+        @include heading(1.35em);
+    }
+
+    h4 {
+        @include heading(1.25em);
+    }
+
+    h5 {
+        @include heading(1.1em);
+    }
+
+    h6 {
+        @include heading(0.85em);
+    }
+
+}

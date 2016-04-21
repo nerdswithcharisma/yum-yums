@@ -1,0 +1,17 @@
+@media #{ $tabletV-smaller }{
+    .list-group-mobile{
+        border: 1px solid $borderDefault;
+        border-bottom: none;
+        
+        li{
+            border-bottom: 1px solid $borderDefault; 
+            padding: 5px;
+        }
+        
+        a{
+            display: block; 
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }   
+}

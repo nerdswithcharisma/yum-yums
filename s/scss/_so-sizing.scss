@@ -1,0 +1,134 @@
+//Font Sizing Helpers
+.font-8{
+  @include sizing("font", 8px);
+}
+
+.font-10{
+  @include sizing("font", 10px);
+}
+
+.font-12{
+  @include sizing("font", 12px);
+}
+
+.font-14{
+  @include sizing("font", 14px);
+}
+
+.font-16{
+  @include sizing("font", 16px);
+}
+
+.font-18{
+  @include sizing("font", 18px);
+}
+
+.font-21{
+  @include sizing("font", 21px);
+}
+
+.font-24{
+  @include sizing("font", 24px);
+}
+
+.font-28{
+  @include sizing("font", 28px);
+}
+
+.font-34{
+  @include sizing("font", 34px);
+}
+
+.font-36{
+  @include sizing("font", 36px);
+}
+
+.font-40{
+    @include sizing("font", 40px);
+}
+
+.font-48{
+  @include sizing("font", 48px);
+}
+
+.font-60{
+  @include sizing("font", 60px);
+}
+
+.font-72{
+  @include sizing("font", 72px);
+}
+
+.font-200{
+@include sizing("font", 200px);
+}
+
+@media #{$iphone}{
+    //Font Sizing Helpers
+    .font-8{ @include sizing("font", 6px); }
+    .font-10{ @include sizing("font", 8px); }
+    .font-12{ @include sizing("font", 10px); }
+    .font-14{ @include sizing("font", 12px); }
+    .font-16{ @include sizing("font", 14px); }
+    .font-18{ @include sizing("font", 16px); }
+    .font-21{ @include sizing("font", 18px); }
+    .font-24{ @include sizing("font", 21px); }
+    .font-28{ @include sizing("font", 24px); }
+    .font-34{ @include sizing("font", 28px); }
+    .font-36{ @include sizing("font", 28px); }
+    .font-40{ @include sizing("font", 36px); }
+    .font-48{ @include sizing("font", 36px); }
+    .font-60{ @include sizing("font", 48px); }
+    .font-72{ @include sizing("font", 48px); }
+}
+
+//line height
+.lh-xs{
+  line-height: 1em;
+}
+
+.lh-sm{
+  line-height: 1.4em;
+}
+
+.lh-md{
+  line-height: 1.9em;
+}
+
+.lh-lg{
+  line-height: 2.2em;
+}
+
+.lh-xl{
+  line-height: 2.6em;
+}
+
+
+//line height specfic
+.lh-1{
+  line-height: 1em;
+}
+
+.lh-standard{
+    line-height: 1.6em;
+}
+
+.lh-3{
+  line-height: 3em;
+}
+
+.lh-5{
+  line-height: 5em;
+}
+
+.lh-7{
+  line-height: 7em;
+}
+
+.lh-9{
+  line-height: 9em;
+}
+
+.weight-light{ font-weight: 300; }
+.weight-semi{ font-weight: 600; }
+.weight-black{ font-weight: 800; }
