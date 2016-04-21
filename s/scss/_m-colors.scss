@@ -1,16 +1,15 @@
 $borderDefault: #dddfe3;
-$primary: #0e3b64;
-$primary1: #00abca; 
-$primary2: #addbe2; 
-$primary3: #185E81;
-$primary4: #06699a;
-$primary5: #c4e7f9;
-$primary6: #0e4d6b;
-$primary7: #4cd0fc;
-$primary8: #d5f1fe;
-$primary9: #0f4579;
-$primary10: #083965;
-$primary11: #f0fafe;
+$primary: #6a65a4;
+$primary1: lighten($primary, 10%); 
+$primary2: lighten($primary, 20%); 
+$primary3: lighten($primary, 30%);
+$primary4: lighten($primary, 40%);
+$primary5: lighten($primary, 50%);
+$primary6: darken($primary, 10%);
+$primary7: darken($primary, 20%);
+$primary8: darken($primary, 30%);
+$primary9: darken($primary, 40%);
+$primary10: darken($primary, 50%);
 $standardText: #545454;
 $gray0: #f8f9fb;
 $gray1: #9f9f9f; 
@@ -23,15 +22,15 @@ $cta2: #8a380b;
 $success: #62C774;
 $danger: #FF4535;
 $offRed: #df2f22;
-$dark: #2c2c2c;
+$dark: #384550;
 $light: #ffffff;
 $orange: #f47401;
-$review: #ffbd26;
+$review: #eeb02e;
 
 $facebook: #47559d;
 $googlePlus: #d35138;
 $twitter: #4eaaf2;
 
 //for looping, add to each when introducing a new color
-$color_names: borderDefault standardText primary primary1 primary2 primary3 primary4 primary5 primary6 primary7 primary8 primary9 primary10 primary11 gray0 gray1 gray2 gray3 text paragraph cta cta2 success danger offRed dark light orange review facebook googlePlus twitter;
-$color_vars: $borderDefault $standardText $primary $primary1 $primary2 $primary3 $primary4 $primary5 $primary6 $primary7 $primary8 $primary9 $primary10 $primary11 $gray0 $gray1 $gray2 $gray3 $text $paragraph $cta $cta2 $success $danger $offRed $dark $light $orange $review $facebook $googlePlus $twitter;
+$color_names: borderDefault standardText primary primary1 primary2 primary3 primary4 primary5 primary6 primary7 primary8 primary9 primary10 gray0 gray1 gray2 gray3 text paragraph cta cta2 success danger offRed dark light orange review facebook googlePlus twitter;
+$color_vars: $borderDefault $standardText $primary $primary1 $primary2 $primary3 $primary4 $primary5 $primary6 $primary7 $primary8 $primary9 $primary10 $gray0 $gray1 $gray2 $gray3 $text $paragraph $cta $cta2 $success $danger $offRed $dark $light $orange $review $facebook $googlePlus $twitter;

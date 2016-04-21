@@ -24,4 +24,31 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <![endif]-->
     </head>
-    <body ng-app="nwcApp" ng-controller="nwcCtrl"></body>
+    <body ng-app="nwcApp" ng-controller="nwcCtrl">
+        <header id="header" class="bg--primary padding-vert-lg font--light font-28">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-xs-8 text-center">
+                        <img src="s/images/logo--header-xs.png" alt="Yum Yums Logo" class="marign--auto" />
+                    </div>
+                    <div class="col-xs-2 text-right">
+                        <!-- Right -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <aside id="search" class="bg--gray0 bordered--bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-10">
+                        <input type="text" class="col-xs-12 bg--gray0 bordered--none padding-vert-sm" />
+                    </div>
+                    <div class="col-xs-2 padding-vert-xs">
+                        <button class="btn-link"><i class="fa fa-search font--gray1" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </aside>
