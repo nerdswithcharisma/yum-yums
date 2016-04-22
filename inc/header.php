@@ -43,10 +43,10 @@
         <aside id="search" class="bg--gray0 bordered--bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-10">
+                    <div class="col-xs-11">
                         <input type="text" class="col-xs-12 bg--gray0 bordered--none padding-vert-sm" />
                     </div>
-                    <div class="col-xs-2 padding-vert-xs">
+                    <div class="col-xs-1 padding-vert-xs text-center">
                         <button class="btn-link"><i class="fa fa-search font--gray1" aria-hidden="true"></i></button>
                     </div>
                 </div>
