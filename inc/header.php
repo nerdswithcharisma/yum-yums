@@ -24,11 +24,11 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <![endif]-->
     </head>
-    <body ng-app="nwcApp" ng-controller="nwcCtrl">
+    <body ng-app="nwcApp" ng-controller="nwcCtrl as nwc">
         <header id="header" class="bg--primary padding-vert-lg font--light font-28">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-2">
+                    <div class="col-xs-2" ng-click="nwc.toggleMenu()">
                         <i class="fa fa-bars" aria-hidden="true"></i>
                     </div>
                     <div class="col-xs-8 text-center">
@@ -40,13 +40,29 @@
                 </div>
             </div>
         </header>
+        <nav ng-show="nwc.showNav" class="bg--dark font--light padding-vert-lg font-21 lh-3">
+            <div class="container">
+                <div>
+                    <i class="fa fa-sun-o font-28 font--primary3" aria-hidden="true"></i> &nbsp; Breakfast
+                </div>
+                <div>
+                    <i class="fa fa-shopping-basket font-28 font--primary3" aria-hidden="true"></i> &nbsp; Lunch
+                </div>
+                <div>
+                    <i class="fa fa-moon-o font-28 font--primary3" aria-hidden="true"></i> &nbsp; Dinner
+                </div>
+                <div>
+                    <i class="fa fa-beer font-28 font--primary3" aria-hidden="true"></i> &nbsp; Snacks
+                </div>
+            </div>
+        </nav>
         <aside id="search" class="bg--gray0 bordered--bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-11">
+                    <div class="col-xs-10">
                         <input type="text" class="col-xs-12 bg--gray0 bordered--none padding-vert-sm" />
                     </div>
-                    <div class="col-xs-1 padding-vert-xs text-center">
+                    <div class="col-xs-2 padding-vert-xs text-center">
                         <button class="btn-link"><i class="fa fa-search font--gray1" aria-hidden="true"></i></button>
                     </div>
                 </div>

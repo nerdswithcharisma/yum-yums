@@ -1,7 +1,7 @@
 <?php include_once("inc/header.php"); ?>
 <main id="appContainer">
-    <section id="list--view" class="hide">
-        <div class="col-xs-12 bordered--bottom">
+    <section id="list--view">
+        <div class="col-xs-12 bordered--bottom" ng-click="nwc.toggleRecipe()">
             <div class="row padding-vert-md">
                 <div class="col-xs-3">
                     <img src="s/images/food-1.png" class="margin--auto img-circle img-thumbnail" />
@@ -17,7 +17,7 @@
             </div>
         </div>
     </section>
-    <section id="detail--view">
+    <section id="detail--view" class="bg--light z9999 animate--all" ng-class="{'active':nwc.showRecipePanel}">
         <header class="container padding-vert-lg bordered--bottom">
             <div class="row">
                 <div class="col-xs-9">
@@ -27,7 +27,7 @@
                         <span class="font-21 font--gray1">Breakfast</span>
                     </h6> 
                 </div>
-                <div class="col-xs-3 text-right">
+                <div class="col-xs-3 text-right" ng-click="nwc.toggleRecipe()">
                     <i class="fa fa-angle-down font--gray1 font-40" aria-hidden="true"></i>
                 </div>
             </div>
@@ -38,9 +38,10 @@
         <main>
             <div class="padding-md bordered--bottom">
                 <div class="container">
-                    <i class="fa fa-rebel font-21 bg--success padding-sm img-circle font--light" aria-hidden="true"></i>
+                    <i class="fa fa-plus font-21 bg--borderDefault padding-sm img-circle font--light pull-right" aria-hidden="true" data-toggle="tooltip" data-placement="left" title="Edit"></i>
+                    <i class="fa fa-rebel font-21 bg--success padding-sm img-circle font--light" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Feelin' Fine"></i>
                     &nbsp;&nbsp;&nbsp;
-                    <i class="fa fa-minus-circle font-21 bg--danger padding-sm img-circle font--light" aria-hidden="true"></i>
+                    <i class="fa fa-minus-circle font-21 bg--danger padding-sm img-circle font--light" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Morphs...Don't Eat!"></i>
                 </div>
             </div>
             <div class="padding-md bordered--bottom bg--gray0">
