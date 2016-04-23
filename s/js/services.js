@@ -93,5 +93,46 @@ nwcApp.factory('nwcServices', function($http, $rootScope){
     	   word = word.replace(/<(?:.|\n)*?>/gm, '');
             return word;
         },
+        renderReviewIcons : function(){
+            jQuery('.font--review').each(function(){
+                var reviewRating = parseFloat( jQuery(this).attr('data-rating') );
+                switch (reviewRating){
+                    case 0.5:
+                        jQuery(this).find('i:lt(1)').addClass('fa-star-half-o').removeClass('fa-star-o');
+                        break;
+                    case 1:
+                        jQuery(this).find('i:lt(1)').addClass('fa-star').removeClass('fa-star-o');
+                        break;
+                    case 1.5:
+                        jQuery(this).find('i:lt(1)').addClass('fa-star').removeClass('fa-star-o');
+                        jQuery(this).find('i:eq(1)').addClass('fa-star-half-o').removeClass('fa-star-o');
+                        break;
+                    case 2:
+                        jQuery(this).find('i:lt(2)').addClass('fa-star').removeClass('fa-star-o');
+                        break;
+                    case 2.5:
+                        jQuery(this).find('i:lt(2)').addClass('fa-star').removeClass('fa-star-o');
+                        jQuery(this).find('i:eq(2)').addClass('fa-star-half-o').removeClass('fa-star-o');
+                        break;
+                     case 3:
+                        jQuery(this).find('i:lt(3)').addClass('fa-star').removeClass('fa-star-o');
+                        break;
+                     case 3.5:
+                        jQuery(this).find('i:lt(3)').addClass('fa-star').removeClass('fa-star-o');
+                        jQuery(this).find('i:eq(3)').addClass('fa-star-half-o').removeClass('fa-star-o');
+                        break;
+                    case 4:
+                        jQuery(this).find('i:lt(4)').addClass('fa-star').removeClass('fa-star-o');
+                        break;
+                    case 4.5:
+                        jQuery(this).find('i:lt(4)').addClass('fa-star').removeClass('fa-star-o');
+                        jQuery(this).find('i:eq(4)').addClass('fa-star-half-o').removeClass('fa-star-o');
+                        break;
+                     case 5:
+                        jQuery(this).find('i:lt(5)').addClass('fa-star').removeClass('fa-star-o');
+                        break;
+                   } 
+            });    
+        },
     }
 });

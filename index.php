@@ -1,7 +1,7 @@
 <?php include_once("inc/header.php"); ?>
 <main id="appContainer">
     <section id="list--view">
-        <div class="col-xs-12 bordered--bottom" ng-click="nwc.toggleRecipe($index)" ng-repeat="item in nwc.listView">
+        <div class="col-xs-12 bordered--bottom" ng-click="nwc.toggleRecipe($index)" ng-repeat="item in nwc.listView | filter:nwc.searchText">
             <div class="row padding-vert-md">
                 <div class="col-xs-3">
                     <img ng-src="{{item.image}}" class="margin--auto img-circle img-thumbnail" />
