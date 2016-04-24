@@ -1,3 +1,10 @@
+#header{
+    background: url(../../s/images/loading.jpg) no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 #detail--view{
     position: fixed;
     top: 999px;

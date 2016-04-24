@@ -29,7 +29,7 @@
             <br><br>
             <object type="image/svg+xml" data="s/images/loading.svg" class="margin--auto" height="105"></object>
         </aside>
-        <header id="header" class="bg--primary padding-vert-lg font--light font-28">
+        <header id="header" class="padding-vert-lg font--light font-28">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-2" ng-click="nwc.toggleMenu()">

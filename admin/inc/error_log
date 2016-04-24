@@ -1,0 +1,7 @@
+[24-Oct-2015 15:01:26 America/Chicago] PHP Fatal error:  Call to undefined function session_is_registered() in /home1/dausauce/public_html/portfolio/inc/checkLogin.php on line 2
+[24-Oct-2015 15:03:52 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home1/dausauce/public_html/portfolio/inc/checkLogin.php on line 12
+[24-Oct-2015 15:04:09 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home1/dausauce/public_html/portfolio/inc/checkLogin.php on line 12
+[24-Oct-2015 15:04:15 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home1/dausauce/public_html/portfolio/inc/checkLogin.php on line 12
+[24-Oct-2015 20:14:27 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home1/dausauce/public_html/portfolio/inc/checkLogin.php on line 12
+[25-Oct-2015 13:20:28 America/Chicago] PHP Parse error:  syntax error, unexpected ':' in /home1/dausauce/public_html/portfolio/inc/checkLogin.php on line 69
+[25-Oct-2015 13:42:58 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home1/dausauce/public_html/portfolio/inc/checkLogin.php on line 61
