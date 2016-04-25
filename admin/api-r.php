@@ -1,12 +1,9 @@
 <?php
 // set up the connection variables
-    $hostname = "localhost";
-    $username = "root";
-    $password = "root";
-    $dbname = "yumyums";
+    include("connect.php");
 
     // connect to the database
-    $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
+    $dbh = new PDO("mysql:host=$servername;dbname=$db_name", $username, $password);
 
     // a query get all the records from the users table
     $sql = 'SELECT * FROM entries';

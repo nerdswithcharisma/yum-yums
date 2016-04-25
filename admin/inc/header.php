@@ -14,6 +14,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../s/css/nwc.min.css">
     
     <style>
         html>*{
@@ -146,6 +147,30 @@
         .font--gray{ color: #898989; }
         .font--primary{ color: #a825ea; }
         .font--error{ color: #F73F69; }
+        
+        .fa-camera{ 
+            font-size: 24px;
+            line-height: 32px;    
+        }
+        
+        #iframeHolder i{
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            z-index: 9999;
+            font-size: 40px;
+        }
+        
+        #uploadPhoto{
+            position: fixed;
+            top: 1%;
+            left: 1%;
+            width: 98%;
+            height: 98%;
+            z-index: 9998;
+            border: 0;
+            box-shadow: 0 0 0 24px rgba(0,0,0,0.6);
+        }
     </style>
     
     <!-- js -->

@@ -59,10 +59,10 @@
                     <strong class="font--dark">Ingredients</strong>
                 </div>
             </div>
-            <div class="padding-md bordered--bottom bordered--gray0" ng-repeat="ingredient in nwc.mainItem.ingredients">
+            <div class="padding-md bordered--bottom bordered--gray0" ng-repeat="(key, value) in nwc.ingredientArray">
                 <div class="container">
-                    <strong class="bg--primary1 font--light padding-sm img-circle" ng-bind="ingredient.amount"></strong> 
-                    &nbsp; <strong class="font--dark" ng-bind="ingredient.name"></strong>
+                    <!--<strong class="bg--primary1 font--light padding-sm img-circle" ng-bind="key"></strong> -->
+                    <strong class="font--dark" ng-bind="value"></strong>
                 </div>
             </div>
         </main>

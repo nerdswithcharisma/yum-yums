@@ -63,6 +63,7 @@ if(!isset($_SESSION['user_id'])){   //if the sesion is not set
           <div class="col-xs-12" id="entryBg" style="background: url({{nwc.currentEntryBackground}})">
               <div>
                   <br>
+                  <i class="fa fa-camera font--light pull-right" ng-click="nwc.showUpload = !nwc.showUpload"></i>
                   <!-- <strong ng-bind="nwc.mode" class="font--primary"></strong> -->
                   <h4 class="font--error pull-right" ng-show="nwc.currentEntry" ng-click="nwc.deleteItemInfo()"><i class="fa fa-times-circle"></i></h4>
                   <h4 class="font--light" ng-bind="nwc.currentEntry.title" ng-show="nwc.currentEntry.title"></h4>
@@ -81,7 +82,7 @@ if(!isset($_SESSION['user_id'])){   //if the sesion is not set
                     <input type="text" ng-model="nwc.formData.rating" class="form-control" name="link" value="{{nwc.currentEntry.rating}}" placeholder="Rating" />
                   </div>
                   <div class="form-group">
-                      <input type="file" id="image" name="image" />
+                      <input type="text" ng-model="nwc.formData.image" class="form-control" name="image" value="{{nwc.currentEntry.image}}" placeholder="Image Url" required />
                   </div>
                   <div class="form-group">
                       <input type="text" ng-model="nwc.formData.description" class="form-control" name="thumb" value="{{nwc.currentEntry.description}}" placeholder="Description" required />
@@ -105,6 +106,13 @@ if(!isset($_SESSION['user_id'])){   //if the sesion is not set
         <section id="crud--buttons">
             <?php include("inc/nav.php"); ?>
         </section>
+
+        
+        <div id="iframeHolder" ng-show="nwc.showUpload">
+            <i class="fa fa-times-circle text-danger" aria-hidden="true" ng-click="nwc.showUpload = !nwc.showUpload"></i>
+            <iframe id="uploadPhoto" src="inc/file-upload-landing.php"></iframe>
+        </div>
+
     <?php include($_SERVER['DOCUMENT_ROOT']."/aaTutorials/yumyums/inc/footer.php"); ?>
 <?php else: ?>
     <h2>#fuckOff</h2>

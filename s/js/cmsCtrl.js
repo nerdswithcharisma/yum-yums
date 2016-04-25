@@ -63,4 +63,10 @@ nwcApp.controller('cmsCtrl', ['$scope', '$rootScope', '$timeout', '$window', 'nw
             });    
         }
     };
+    
+    /*
+    self.uploadImage = function(){
+        window.open("inc/file-upload-landing.php");    
+    };
+    */
 }]);
