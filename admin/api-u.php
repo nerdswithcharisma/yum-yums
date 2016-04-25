@@ -15,7 +15,8 @@
     $image = $decoded->image;
     $description = $decoded->description;
     $morphs = $decoded->morphs;
-    $instructions = $decoded->instructions;  
+    $instructions = $decoded->instructions; 
+    $ingredients = $decoded->ingredients;
     
     //insert into db
     $sql = "UPDATE yumyums.entries SET 
@@ -25,7 +26,8 @@
             image ='". $image ."', 
             description ='". $description ."', 
             morphs ='". $morphs ."', 
-            instructions ='". $instructions ."'
+            instructions ='". $instructions ."',
+            ingredients ='". $ingredients ."'
             WHERE title='".$title."'";
     
     if ($conn->query($sql) === TRUE) {
@@ -38,7 +40,8 @@
             'image' => $image,
             'description' => $description,
             'morphs' => $morphs,
-            'instructions' => $instructions
+            'instructions' => $instructions,
+            'ingredients' => $ingredients
         );
         //return to console
         echo json_encode($output);

@@ -81,7 +81,7 @@ if(!isset($_SESSION['user_id'])){   //if the sesion is not set
                     <input type="text" ng-model="nwc.formData.rating" class="form-control" name="link" value="{{nwc.currentEntry.rating}}" placeholder="Rating" />
                   </div>
                   <div class="form-group">
-                      <input type="text" ng-model="nwc.formData.image" class="form-control" name="content" value="{{nwc.currentEntry.image}}" placeholder="Image" />
+                      <input type="file" id="image" name="image" />
                   </div>
                   <div class="form-group">
                       <input type="text" ng-model="nwc.formData.description" class="form-control" name="thumb" value="{{nwc.currentEntry.description}}" placeholder="Description" required />
@@ -91,6 +91,9 @@ if(!isset($_SESSION['user_id'])){   //if the sesion is not set
                   </div>
                   <div class="form-group">
                       <input type="text" ng-model="nwc.formData.instructions" class="form-control" name="thumb" value="{{nwc.currentEntry.instructions}}" placeholder="Instructions" required />
+                  </div>
+                  <div class="form-group">
+                      <input type="text" ng-model="nwc.formData.ingredients" class="form-control" name="thumb" value="{{nwc.currentEntry.ingredients}}" placeholder="Ingredients: comma separated" required />
                   </div>
                   <div>
                       <button type="submit" id="update--button" class="btn pull-right" ng-click="nwc.postItemInfo()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button> 

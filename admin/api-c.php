@@ -8,6 +8,7 @@
     $postData = file_get_contents("php://input");
     $decoded = json_decode($postData);
 
+    echo $postData;
     //store the json vars, add each here
     $title = $decoded->title;
     $genre = $decoded->genre;
@@ -15,10 +16,11 @@
     $image = $decoded->image;
     $description = $decoded->description;
     $morphs = $decoded->morphs;
-    $instructions = $decoded->instructions;    
+    $instructions = $decoded->instructions;
+    $ingredients = $decoded->ingredients;
     
     //insert into db
-    $sql = "INSERT INTO yumyums.entries (title, genre, rating, image, description, morphs, instructions) VALUES ('$title', '$genre', '$rating', '$image', '$description', '$morphs', '$instructions')";
+    $sql = "INSERT INTO yumyums.entries (title, genre, rating, image, description, morphs, instructions, ingredients) VALUES ('$title', '$genre', '$rating', '$image', '$description', '$morphs', '$instructions', '$ingredients')";
     
     if ($conn->query($sql) === TRUE) {
         //if successful, this is the response
@@ -30,7 +32,8 @@
             'image' => $image,
             'description' => $description,
             'morphs' => $morphs,
-            'instructions' => $instructions
+            'instructions' => $instructions,
+            'ingredients' => $ingredients
         );
         //return to console
         echo json_encode($output);
